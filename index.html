@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" form name="caeserForm" id="ceaserForm">
+        <label for="userMessage">Message:</label><br /><br />
+        <textarea id="userMessage" rows="5" cols="50" oninput="">
+      </textarea>
+        <br /> <br />
+        <label for="userKey">Key:</label>
+        <input type="number" min="0" max="26" id="userKey" value="1" onchange="" />
+        <br /> <br />
+        <label for="encode">Encode:</label>
+        <input type="radio" name="code" id="encode" checked onchange="" />
+        <label for="decode">Decode:</label>
+        <input type="radio" name="code" id="decode" onchange="" />
+        <br /> <br />
+        
+        
+        <label for="output">Output:</label><br /><br />
+        <textarea id="output" rows="5" cols="50">
+      </textarea>
+
+        </form>
+    </div>
+    <script src="cipher.js"></script>
+</body>
+
+</html>
