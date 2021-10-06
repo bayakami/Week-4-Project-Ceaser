@@ -9,16 +9,16 @@
 <body>
     <div class="container" form name="caeserForm" id="ceaserForm">
         <label for="userMessage">Message:</label><br /><br />
-        <textarea id="userMessage" rows="5" cols="50" oninput="">
+        <textarea id="userMessage" rows="5" cols="50" oninput="enCode()">
       </textarea>
         <br /> <br />
         <label for="userKey">Key:</label>
-        <input type="number" min="0" max="26" id="userKey" value="1" onchange="" />
+        <input type="number" min="0" max="26" id="userKey" value="1" onchange="enCode()" />
         <br /> <br />
         <label for="encode">Encode:</label>
-        <input type="radio" name="code" id="encode" checked onchange="" />
+        <input type="radio" name="code" id="encode" checked onchange="enCode()" />
         <label for="decode">Decode:</label>
-        <input type="radio" name="code" id="decode" onchange="" />
+        <input type="radio" name="code" id="decode" onchange="enCode()" />
         <br /> <br />
         
         
